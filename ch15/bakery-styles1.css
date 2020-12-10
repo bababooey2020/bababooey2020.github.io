@@ -83,25 +83,8 @@ p.more {
   font-family: verdana, sans-serif;
   text-transform: uppercase;
   font-size: .8em;
-  clear: left;
 }
-main img {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-  img[src*="muffin"] {
-  margin-left: 50px;
-  -webkit-shape-outside: circle(110px);
-  shape-outside: circle(110px);
-  shape-outside: polygon(0px 0px, 197px 0px, 241px
-  31px, 241px 68px, 226px 82px, 219px 131px, 250px
-  142px, 250px 158px, 0px 158px);
-}
-img[src*="bread"] {
-  -webkit-shape-outside: ellipse(130px 95px at 50%
-  50%);
-  shape-outside: ellipse(130px 95px at 50% 50%);
-}
+
 /* aside "hours" styles */
 aside {
   margin: 1em 2.5% 0 10%;
@@ -127,4 +110,8 @@ h2 {
   font-size: .8em;
   text-transform: uppercase;
 }
-
+#award {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
