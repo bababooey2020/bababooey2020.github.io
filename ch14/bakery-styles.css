@@ -127,4 +127,8 @@ h2 {
   font-size: .8em;
   text-transform: uppercase;
 }
-
+#award {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
