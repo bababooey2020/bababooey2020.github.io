@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: .2rem;
 }
 p {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Arbutus Slab', serif;
 }
 /* header*/
 
@@ -93,9 +93,10 @@ p {
 /*bowlSizesHeading*/
 #bowlSizesHeading{
     display: grid;
-    grid-template-rows: 10rem;
-    grid-template-columns: 30% 30% 20% 20%;
-    width: 100vw;
+    grid-template-rows: 6rem;
+    grid-template-columns: 30% 40% 15% 15%;
+    margin: 0 10rem 0 10rem;
+    text-align: center;
 }
 #lilBowl{
     grid-area: 1/3/2/4;
@@ -107,12 +108,16 @@ p {
 /* sigBowlItem */
 .sigBowlItem{
     display: grid;
-    grid-template-rows: 20rem 20rem;
-    grid-template-columns: 30% 30% 20% 20%;
-    width: 100vw;
+    grid-template-rows: 3rem 8rem;
+    grid-template-columns: 30% 40% 15% 15%;
+    margin: 0 10rem 0 10rem;
+    text-align: center;
 }
 .sigBowlImg{
     grid-area: 1/1/3/2;
+}
+.sigBowlImg img {
+    height: 100%;
 }
 .sigBowlTitle{
     grid-area: 1/2/2/3;
