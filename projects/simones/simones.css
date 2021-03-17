@@ -143,6 +143,10 @@ p {
 }
 
 /*sides grid area*/
+#sidesContainer{
+    background-color: rgba(83, 153, 130, 0.77);
+    color: #ffffff;
+}
 .sidesTitleGrid{
     display: grid;
     grid-row-template: 10rem;
