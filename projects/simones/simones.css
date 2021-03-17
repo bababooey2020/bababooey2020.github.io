@@ -45,6 +45,8 @@ p {
 
 #cyob {
     background-image: url("images/cyobBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-rows: 10rem 10rem 40rem;
     grid-template-columns: 80% 20%;
@@ -138,4 +140,63 @@ p {
 #wrapOption{
     display: block;
     margin: 2rem auto;
+}
+
+/*sides grid area*/
+.sidesTitleGrid{
+    display: grid;
+    grid-row-template: 10rem;
+    grid-column-template: 20% 20% 40%;
+    margin: 0 20%;
+}
+
+.salads{
+    grid-area: 1/1/2/2;
+}
+
+.pitzaPies{
+    grid-area: 1/3/2/4;
+}
+
+.sides{
+    grid-area: 1/4/2/5;
+}
+
+.sidesGrid{
+    display: grid;
+    grid-row-template: 10rem;
+    grid-column-template: 20% 20% 20% 20%;
+    margin: 0 20%;
+}
+
+.kale-quinoaTitle{
+    grid-area: 1/1/2/2;
+}
+
+.kale-quinoaDescription{
+    grid-area: 2/1/3/2;
+}
+
+.zaatarTitle{
+    grid-area: 1/2/2/3;
+}
+
+.zaatarDescription{
+    grid-area: 2/2/3/3;
+}
+
+.falafelSnackTitle{
+    grid-area: 1/3/2/4;
+}
+
+.falafelSnackDescription{
+    grid-area: 2/3/3/4;
+}
+
+.grapeLeavesTitle{
+    grid-area: 1/4/2/5;
+}
+
+.grapeLeavesDescription{
+    grid-area: 2/4/3/5;
 }
