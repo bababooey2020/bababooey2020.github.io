@@ -1,22 +1,23 @@
 html {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
-
 body {
-    width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
+    width: 100vw;
     margin: 0;
-    font-family: 'Arbutus Slab', serif;
+}
+/* typography */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Arbutus Slab', sans-serif;
     letter-spacing: .2rem;
+    transform: scale(1, .9);
+    margin: 0;
 }
 p {
-    font-family: 'Arbutus Slab', serif;
+    font-family: 'Arbutus Slab', sans-serif;
+    margin: 0;
 }
-/* header*/
 
+/* header */
 .logo {
     display: block;
     margin: 1.2rem auto 0 auto;
@@ -27,48 +28,44 @@ p {
     list-style-type: none;
     padding: 0;
     margin: 1.2rem 12rem;
-    font-family: 'Arimo', serif;
+    font-family: 'Arimo', sans-serif;
     font-weight: 800;
 }
 
 /* hiring */
 #hiring {
-    background: rgba(39, 105, 85, 0.98);
+    background: rgba(39,105,85,0.98);
 }
+
 .hiring {
     display: block;
     margin: 0 auto;
-    
 }
 
-/*create your own bowl (cyob)*/
-
+/* create your own bowl (cyob) */
 #cyob {
     background-image: url("images/cyobBG.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-rows: 10rem 10rem 40rem;
+    grid-template-rows:10rem 10rem 35rem;
     grid-template-columns: 80% 20%;
 }
-
-.cyob {
+.cyob{
     grid-area: 1/1/2/2;
     margin: auto 0 auto 47%;
 }
-
 .cyobSizes {
     grid-area: 2/1/3/3;
     margin: auto auto;
 }
-
 .cyobSteps {
     grid-area: 3/1/4/3;
     margin: auto auto;
 }
 
-/**/
-.sectionHeadGrid{
+/*section heading white background*/
+.sectionHeadingGrid{
     width: 100vw;
     display: grid;
     grid-template-rows: .5rem 3.5rem .5rem;
@@ -76,35 +73,58 @@ p {
 
 .sectionHeadingTop{
     grid-area: 1/1/2/2;
-    border-bottom: solid .12em rgb(1, 65, 1);
-    border-top: solid .15em rgb(1, 65, 1);
+    border-top: solid .12rem rgb(13, 97, 19);
+    border-bottom: solid .15rem rgb(13, 97, 19);
 }
-
 .sectionHeadingText{
     grid-area: 2/1/3/2;
     text-align: center;
-    color: #56925B;
+    color: #539982;
+    margin: .3rem 0 0 0;
 }
-
 .sectionHeadingBottom{
     grid-area: 3/1/4/2;
-    border-bottom: solid .12em rgb(1, 65, 1);
-    border-top: solid .15em rgb(1, 65, 1);
+    border-top: solid .12rem rgb(13, 97, 19);
+    border-bottom: solid .15rem rgb(13, 97, 19);
 }
-
-/*bowlSizesHeading*/
+/* greenish heading */
+.sectionHeadingGridGreen{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: .5rem 3.5rem .5rem;
+    background-color: rgba(83, 153, 130, 0.77);
+}
+.sectionHeadingTopGreen{
+    grid-area: 1/1/2/2;
+    border-top: solid .12rem rgb(255, 255, 255);
+    border-bottom: solid .15rem rgb(255, 255, 255);
+}
+.sectionHeadingTextGreen{
+    grid-area: 2/1/3/2;
+    text-align: center;
+    color: #ffffff;
+    margin: .3rem 0 0 0;
+}
+.sectionHeadingBottomGreen{
+    grid-area: 3/1/4/2;
+    border-top: solid .12rem rgb(255, 255, 255);
+    border-bottom: solid .15rem rgb(255, 255, 255);
+}
+/* bowlSizesHeading */
 #bowlSizesHeading{
     display: grid;
-    grid-template-rows: 6rem;
-    grid-template-columns: 30% 40% 15% 15%;
+    grid-template-rows: 5rem;
+    grid-template-columns: 28% 45% 13.9% 13.9%;
     margin: 0 13rem 0 13rem;
     text-align: center;
 }
 #lilBowl{
     grid-area: 1/3/2/4;
+    padding-top: 1rem;
 }
 #bigBowl{
     grid-area: 1/4/2/5;
+    padding-top: 1rem;
 }
 
 /* sigBowlItem */
@@ -114,7 +134,7 @@ p {
     grid-template-columns: 25% 45% 15% 15%;
     margin: 0 13rem 0 13rem;
     text-align: center;
-    color: #00604C;
+    color: #00604c;
 }
 .sigBowlImg{
     grid-area: 1/1/3/2;
@@ -142,65 +162,101 @@ p {
     margin: 2rem auto;
 }
 
-/*sides grid area*/
-#sidesContainer{
+/* sides grid area */
+#sidesContainer {
     background-color: rgba(83, 153, 130, 0.77);
     color: #ffffff;
+    text-align: center;
+    padding: 0 14rem;
 }
-.sidesTitleGrid{
+.sidesTitleGrid {
     display: grid;
-    grid-row-template: 10rem;
-    grid-column-template: 20vw 20vw 40vw;
-    margin: 0 10vw;
+    grid-template-rows:5rem;
+    grid-template-columns: 25% 25% 50%;
+    text-align: center;
 }
-
-.salads{
+.salads {
     grid-area: 1/1/2/2;
+    padding: 1rem;
+    color: #234726;
 }
-
-.pitzaPies{
-    grid-area: 1/3/2/4;
+.pitzaPies {
+    grid-area: 1/2/2/3;
+    padding: 1rem;
+    color: #234726;
 }
-
-.sides{
-    grid-area: 1/4/2/5;
+.sides {
+    grid-area: 1/3/2/5;
+    padding: 1rem;
+    color: #234726;
 }
-
-.sidesGrid{
+.sidesGrid {
     display: grid;
-    grid-row-template: 10rem;
-    grid-column-template: 20vw 20vw 20vw 20vw;
-    margin: 0 10vw;
+    grid-template-rows: 3.2rem 6em;
+    grid-template-columns: 25% 25% 25% 25%;
 }
-
-.kale-quinoaTitle{
+.sideGrid, p {
+    color: solid white;
+}
+.saladsTitle {
     grid-area: 1/1/2/2;
+    border-left: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+    color: #48764C;
 }
-
-.kale-quinoaDescription{
+.saladsDescription {
     grid-area: 2/1/3/2;
+    border-left: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+}
+.pitzaPiesTitle {
+    grid-area: 1/2/2/3;
+    border-left: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+    color: #48764C;
+}
+.pitzaPiesDescription {
+    grid-area: 2/2/3/3;
+    border-left: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+}
+.sidesLeftTitle {
+    grid-area: 1/3/2/4;
+    border-left: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+    color: #48764C;
+}
+.sidesLeftDescription {
+    grid-area: 2/3/3/4;
+    border-left: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+}
+.sidesRightTitle {
+    grid-area: 1/4/2/5;
+    border-right: .2rem white solid;
+    padding: .5rem 1rem .5rem 1rem;
+    color: #48764C;
+}
+.sidesRightDescription {
+    border-right: .2rem white solid;
+    grid-area: 2/4/3/5;
+    padding: .5rem 1rem .5rem 1rem;
 }
 
-.zaatarTitle{
+/*beverages grid*/
+
+#beveragesContainer{
+    
+}
+#beveragesHeadingGrid{
+    display: grid;
+    grid-template-rows: 5rem;
+    grid-template-columns: 40% 45% 15%;
+    margin: 0 13rem 0 13rem;
+}
+#beveragesItemHeading{
     grid-area: 1/2/2/3;
 }
-
-.zaatarDescription{
-    grid-area: 2/2/3/3;
-}
-
-.falafelSnackTitle{
+#beveragesPriceHeading{
     grid-area: 1/3/2/4;
-}
-
-.falafelSnackDescription{
-    grid-area: 2/3/3/4;
-}
-
-.grapeLeavesTitle{
-    grid-area: 1/4/2/5;
-}
-
-.grapeLeavesDescription{
-    grid-area: 2/4/3/5;
 }
